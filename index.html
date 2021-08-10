@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon.in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            background: url('img/moon.jpeg');
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            left: 2px;
+            padding: 9px;
+            margin: 9px 16px;
+            width: 97px;
+        }
+        .left img{
+            width: 63%;
+            margin: auto;
+            display: block;
+            filter: invert(100%);
+            text-align: center;
+        }
+        .left p{
+            margin: 1px;
+            text-align: center;
+        }
+        .right{
+            position: absolute;
+            /* border: 2px solid green; */
+            display: inline-block;
+            right: 2px;
+            top: 2px;
+        }
+        .right button{
+            border: none;
+            color: whitesmoke;
+            padding: 20px;
+            margin: 14px 9px;
+        }
+        .right button:hover{
+            cursor: pointer;
+            color: gray;
+        }
+        .container{
+            height: 366px;
+            border: 2px solid white;
+            border-radius: 10px;
+            display: inline-block;
+            width: 24%;
+            margin: 100px 574px;
+            padding: 1px 6px;
+            background: none;
+        }
+        .container h1{
+            background: none;
+            text-align: center;
+        }
+        .login input{
+            background: none;
+            width: 96%;
+            margin: 22px 2px;
+            text-align: center;
+        }
+        .btn{
+            display: block;
+            width: 20%;
+            margin: auto;
+        }
+        .btn button{
+            border: 2px solid white;
+            border-radius: 10px;
+            margin: 17px -21px;
+            width: 163%;
+        }
+        .btn button:hover{
+            background: grey;
+            cursor: pointer;
+        }
+        .end{
+            background: none;
+            padding: 1px 104px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <img src="img/logo.jpg" alt="" class="logo"><p>Moon</p>
+    </div>
+    <form action="action.py">
+    <div class="right">
+        <button type="submit">Help</button>
+        <button type="submit">Contact Us</button>
+    </div>
+    </form>
+    <div class="container">
+       <h1>Log In</h1>
+       <div class="login">
+           <input name = 'username' type="text" placeholder="Username">
+           <input name = 'password' type="password" placeholder="Password">
+        </div>
+        <div class="btn">
+            <button type="submit">Login</button>
+        </div>
+        <div class="end">
+            <a href="#">Forgot password?</a>
+            <a href="#">Create Account</a>
+        </div>
+    </div>
+</body>
+</html>
